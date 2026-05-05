@@ -18,7 +18,7 @@ jobs:
     uses: ./.github/workflows/build_docker.yaml
     with:
       image_file: docker/mongodb/Dockerfile
-      image_name: kanisterio/mongodb-yaron
+      image_name: yaronl16/mongodb-yaron
       image_tag: 0.118.0-atlantis
       extra_tags: ""
       ref:  0.118.0-atlantis
