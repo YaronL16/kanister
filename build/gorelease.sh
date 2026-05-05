@@ -39,4 +39,5 @@ then
 	docker login https://ghcr.io -u ${GHCR_LOGIN_USER:?"GHCR_LOGIN_USER not specified"} -p ${GHCR_LOGIN_TOKEN}
 fi
 
+git config --global --add safe.directory /go/src/github.com/yaronl16/kanister
 goreleaser release --parallelism=1 --clean --debug --timeout 120m ${RELEASE_NOTES} ${GORELEASE_PARAMS}
