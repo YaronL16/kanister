@@ -26,7 +26,7 @@ jobs:
       # platforms: ${{ env.PLATFORMS }}
       platforms: linux/amd64
       build-args: |
-        TOOLS_IMAGE=ghcr.io/kanisterio/kanister-tools:0.118.0
+        TOOLS_IMAGE=ghcr.io/yaronl16/kanister-tools:0.118.0
       labels: |
         org.opencontainers.image.title=kanister mongodb
         org.opencontainers.image.description=Image for kanister mongodb example blueprints
