@@ -22,7 +22,7 @@ include Makefile.kubebuilder
 BIN := controller
 
 # This repo's root import path (under GOPATH).
-PKG := github.com/kanisterio/kanister
+PKG := github.com/yaronl16/kanister
 
 # Where to push the docker image.
 REGISTRY ?= yaronl16
