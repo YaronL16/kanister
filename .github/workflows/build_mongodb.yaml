@@ -9,6 +9,40 @@ on:
     paths:
       - '.github/workflows/build_mongodb.yaml'
       - 'docker/mongodb/Dockerfile'
+  workflow_dispatch:
+    inputs:
+      image_tag:
+        required: false
+        default: 0.118.0-atlantis
+        type: string
+      ref:
+        required: false
+        default: 0.118.0-atlantis
+        type: string
+      extra_tags:
+        required: false
+        type: string
+      platforms:
+        required: false
+        default: linux/amd64
+        type: string
+  workflow_call:
+    inputs:
+      image_tag:
+        required: false
+        default: 0.118.0-atlantis
+        type: string
+      ref:
+        required: false
+        default: 0.118.0-atlantis
+        type: string
+      extra_tags:
+        required: false
+        type: string
+      platforms:
+        required: false
+        default: linux/amd64
+        type: string
 
 jobs:
   build_mongodb:
