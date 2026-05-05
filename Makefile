@@ -113,7 +113,7 @@ bin/$(ARCH)/$(BIN):
 	"
 # Example: make shell CMD="-c 'date > datefile'"
 shell: build-dirs
-    @git config --global --add safe.directory /go/src/github.com/yaronl16/kanister
+	@git config --global --add safe.directory /go/src/github.com/yaronl16/kanister
 	@echo "launching a shell in the containerized build environment"
 	@PWD=$(PWD) ARCH=$(ARCH) PKG=$(PKG) GITHUB_TOKEN=$(GITHUB_TOKEN) CMD="/bin/bash $(CMD)" /bin/bash ./build/run_container.sh shell
 
