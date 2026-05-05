@@ -39,7 +39,7 @@ jobs:
         run: |
           if [[ ${{github.event_name}} == "push" ]]
           then
-            echo "release_tag=${{ env.RELEASE_TAG }}-${{ github.sha::12 }}" >> $GITHUB_OUTPUT
+            echo "release_tag=${{ env.RELEASE_TAG }}-${{ github.run_number }}" >> $GITHUB_OUTPUT
           else
             echo "release_tag=${{inputs.release_tag}}" >> $GITHUB_OUTPUT
           fi
