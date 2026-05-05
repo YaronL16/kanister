@@ -6,7 +6,7 @@ toolchain go1.25.3
 
 replace (
 	github.com/googleapis/gnostic => github.com/googleapis/gnostic v0.4.1
-	github.com/graymeta/stow => github.com/kastenhq/stow v0.2.6-kasten.1.0.20250930185039-ccb63ada4a21
+	github.com/graymeta/stow => github.com/yaronl16/stow v0.0.0-20260504112959-dab4693754d8
 	github.com/rook/operator-kit => github.com/kastenhq/operator-kit v0.0.0-20180316185208-859e831cc18d
 	golang.org/x/net => golang.org/x/net v0.41.0
 	gopkg.in/check.v1 => github.com/kastenhq/check v0.0.0-20180626002341-0264cfcea734
