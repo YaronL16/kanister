@@ -96,13 +96,6 @@ jobs:
     - id: output_release
       run: echo "release_url=https://github.com/yaronl16/kanister/releases/tag/${RELEASE_TAG}" >> "$GITHUB_OUTPUT"
 
-  build_mongodb:
-    needs: release_packages
-    permissions:
-      packages: write
-      contents: read
-    uses: ./.github/workflows/build_mongodb.yaml
-
   release_example_docker_images:
     needs: [run_if, release_packages]
     permissions:
