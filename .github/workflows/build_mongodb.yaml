@@ -10,39 +10,12 @@ on:
       - '.github/workflows/build_mongodb.yaml'
       - 'docker/mongodb/Dockerfile'
   workflow_dispatch:
-    inputs:
-      image_tag:
-        required: false
-        type: string
-        default: 0.118.0-atlantis
-      ref:
-        required: false
-        type: string
-        default: 0.118.0-atlantis
-      extra_tags:
-        required: false
-        type: string
-      platforms:
-        required: false
-        default: linux/amd64
-        type: string
-  workflow_call:
-    inputs:
-      image_tag:
-        required: false
-        type: string
-        default: 0.118.0-atlantis
-      ref:
-        required: false
-        type: string
-        default: 0.118.0-atlantis
-      extra_tags:
-        required: false
-        type: string
-      platforms:
-        required: false
-        default: linux/amd64
-        type: string
+
+env:
+  IMAGE_TAG: 0.118.0-atlantis
+  REF: 0.118.0-atlantis
+  EXTRA_TAGS: ""
+  PLATFORMS: linux/amd64
 
 jobs:
   build_mongodb:
@@ -53,14 +26,14 @@ jobs:
     with:
       image_file: docker/mongodb/Dockerfile
       image_name: kanisterio/mongodb-yaron
-      image_tag: ${{ inputs.image_tag }}
-      extra_tags: ${{ inputs.extra_tags }}
-      ref:  ${{ inputs.ref }}
+      image_tag: ${{ env.IMAGE_TAG }}
+      extra_tags: ${{ env.EXTRA_TAGS }}
+      ref:  ${{ env.REF }}
       ## Only amd64 platform is supported
-      # platforms: ${{ inputs.platforms }}
+      # platforms: ${{ env.PLATFORMS }}
       platforms: linux/amd64
       build-args: |
-        TOOLS_IMAGE=ghcr.io/kanisterio/kanister-tools:${{ inputs.image_tag }}
+        TOOLS_IMAGE=ghcr.io/kanisterio/kanister-tools:${{ env.IMAGE_TAG }}
       labels: |
         org.opencontainers.image.title=kanister mongodb
         org.opencontainers.image.description=Image for kanister mongodb example blueprints
