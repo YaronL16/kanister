@@ -12,11 +12,13 @@ on:
   workflow_dispatch:
     inputs:
       image_tag:
-        required: true
+        required: false
         type: string
+        default: 0.118.0-atlantis
       ref:
-        required: true
+        required: false
         type: string
+        default: 0.118.0-atlantis
       extra_tags:
         required: false
         type: string
@@ -27,11 +29,13 @@ on:
   workflow_call:
     inputs:
       image_tag:
-        required: true
+        required: false
         type: string
+        default: 0.118.0-atlantis
       ref:
-        required: true
+        required: false
         type: string
+        default: 0.118.0-atlantis
       extra_tags:
         required: false
         type: string
