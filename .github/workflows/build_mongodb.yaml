@@ -19,7 +19,7 @@ jobs:
     with:
       image_file: docker/mongodb/Dockerfile
       image_name: kanisterio/mongodb-yaron
-      image_tag: 0.118.0-atlantis
+      image_tag: 0.118.0
       extra_tags: ""
       ref:  0.118.0-atlantis
       ## Only amd64 platform is supported
