@@ -257,3 +257,5 @@ require (
 	sigs.k8s.io/kustomize/api v0.17.2 // indirect
 	sigs.k8s.io/kustomize/kyaml v0.17.1 // indirect
 )
+
+replace github.com/kanisterio/kanister => github.com/yaronl16/kanister v0.0.0-20260505135123-132e55b73134
