@@ -25,7 +25,7 @@ BIN := controller
 PKG := github.com/kanisterio/kanister
 
 # Where to push the docker image.
-REGISTRY ?= kanisterio
+REGISTRY ?= yaronl16
 
 # Which architecture to build - see $(ALL_ARCH) for options.
 ARCH ?= amd64
