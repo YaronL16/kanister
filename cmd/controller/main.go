@@ -18,8 +18,8 @@
 package main
 
 import (
-	"github.com/kanisterio/kanister/pkg/kancontroller"
-	"github.com/kanisterio/kanister/pkg/log"
+	"github.com/yaronl16/kanister/pkg/kancontroller"
+	"github.com/yaronl16/kanister/pkg/log"
 )
 
 func main() {

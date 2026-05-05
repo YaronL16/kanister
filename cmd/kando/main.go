@@ -17,7 +17,7 @@
 package main
 
 import (
-	"github.com/kanisterio/kanister/pkg/kando"
+	"github.com/yaronl16/kanister/pkg/kando"
 )
 
 func main() {

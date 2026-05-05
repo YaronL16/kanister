@@ -12,9 +12,9 @@ builds:
   main: cmd/kanctl/main.go
   ldflags: &ldflags
   - -extldflags "-static"
-    -X github.com/kanisterio/kanister/pkg/version.Version={{.Version}}
-    -X github.com/kanisterio/kanister/pkg/version.GitCommit={{.Commit}}
-    -X github.com/kanisterio/kanister/pkg/version.BuildDate={{.Date}}
+    -X github.com/yaronl16/kanister/pkg/version.Version={{.Version}}
+    -X github.com/yaronl16/kanister/pkg/version.GitCommit={{.Commit}}
+    -X github.com/yaronl16/kanister/pkg/version.BuildDate={{.Date}}
   env: &env
   - GO111MODULE=on
   - CGO_ENABLED=1

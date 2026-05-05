@@ -20,8 +20,8 @@
 package main
 
 import (
-	"github.com/kanisterio/kanister/pkg/kanctl"
-	"github.com/kanisterio/kanister/pkg/log"
+	"github.com/yaronl16/kanister/pkg/kanctl"
+	"github.com/yaronl16/kanister/pkg/log"
 )
 
 func init() {
