@@ -38,11 +38,11 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/webhook"
 	"sigs.k8s.io/controller-runtime/pkg/webhook/admission"
 
-	crv1alpha1 "github.com/yaronl16/kanister/pkg/apis/cr/v1alpha1"
-	"github.com/yaronl16/kanister/pkg/controllers/repositoryserver"
-	"github.com/yaronl16/kanister/pkg/log"
-	"github.com/yaronl16/kanister/pkg/resource"
-	"github.com/yaronl16/kanister/pkg/validatingwebhook"
+	crv1alpha1 "github.com/kanisterio/kanister/pkg/apis/cr/v1alpha1"
+	"github.com/kanisterio/kanister/pkg/controllers/repositoryserver"
+	"github.com/kanisterio/kanister/pkg/log"
+	"github.com/kanisterio/kanister/pkg/resource"
+	"github.com/kanisterio/kanister/pkg/validatingwebhook"
 	//nolint:gci
 	//+kubebuilder:scaffold:imports
 
