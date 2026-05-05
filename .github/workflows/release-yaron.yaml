@@ -26,7 +26,6 @@ env:
 
 jobs:
   run_if:
-    if: "${{ (github.event_name == 'push' && startsWith(github.event.head_commit.message, 'pre-release: Update version to')) || github.event_name == 'workflow_dispatch' }}"
     runs-on: ubuntu-latest
     outputs:
       release_tag: ${{ steps.release_tag.outputs.release_tag }}
