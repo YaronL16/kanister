@@ -114,7 +114,7 @@ jobs:
     uses: ./.github/workflows/build_docker.yaml
     with:
       image_file: docker/postgres-kanister-tools/Dockerfile
-      image_name: kanisterio/postgres-kanister-tools
+      image_name: yaronl16/postgres-kanister-tools-yaron
       image_tag: ${{ inputs.image_tag }}
       extra_tags: ${{ inputs.extra_tags }}
       ref:  ${{ inputs.ref }}
