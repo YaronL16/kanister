@@ -6,10 +6,12 @@ on:
   push:
     branches:
       - master
+      - main
       - 0.118.0-atlantis
     paths:
       - '.github/workflows/release-yaron.yaml'
       - '.github/workflows/build_example_images.yaml'
+      - 'buildtrigger'
 
   workflow_dispatch:
      inputs:
