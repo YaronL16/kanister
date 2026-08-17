@@ -120,7 +120,7 @@ jobs:
       ref:  ${{ inputs.ref }}
       platforms: ${{ inputs.platforms }}
       build-args: |
-        TOOLS_IMAGE=ghcr.io/kanisterio/kanister-tools:${{ inputs.image_tag }}
+        TOOLS_IMAGE=ghcr.io/yaronl16/kanister-tools:${{ inputs.image_tag }}
       labels: |
         org.opencontainers.image.title=kanister tools for postgresql
         org.opencontainers.image.description=Image for kanister postgresql example blueprints
@@ -138,7 +138,7 @@ jobs:
       ref:  ${{ inputs.ref }}
       platforms: ${{ inputs.platforms }}
       build-args: |
-        TOOLS_IMAGE=ghcr.io/kanisterio/kanister-tools:${{ inputs.image_tag }}
+        TOOLS_IMAGE=ghcr.io/yaronl16/kanister-tools:${{ inputs.image_tag }}
       labels: |
         org.opencontainers.image.title=kanister postgresql example
         org.opencontainers.image.description=Image for kanister postgresql example blueprints
