@@ -132,7 +132,7 @@ jobs:
     uses: ./.github/workflows/build_docker.yaml
     with:
       image_file: docker/postgresql/Dockerfile
-      image_name: kanisterio/postgresql
+      image_name: yaronl16/postgres-yaron
       image_tag: ${{ inputs.image_tag }}
       extra_tags: ${{ inputs.extra_tags }}
       ref:  ${{ inputs.ref }}
